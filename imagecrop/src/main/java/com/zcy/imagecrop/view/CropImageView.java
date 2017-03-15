@@ -26,7 +26,7 @@ public class CropImageView extends TransformImageView {
 
     public static final int DEFAULT_MAX_BITMAP_SIZE = 0;
     public static final int DEFAULT_IMAGE_TO_CROP_BOUNDS_ANIM_DURATION = 500;
-    public static final float DEFAULT_MAX_SCALE_MULTIPLIER = 10.0f;
+    public static final float DEFAULT_MAX_SCALE_MULTIPLIER = 10f;
     public static final float SOURCE_IMAGE_ASPECT_RATIO = 0f;
     public static final float DEFAULT_ASPECT_RATIO = SOURCE_IMAGE_ASPECT_RATIO;
 
@@ -69,7 +69,6 @@ public class CropImageView extends TransformImageView {
 
     /**
      * This method crops part of image that fills the crop bounds.
-     * <p/>
      * First image is downscaled if max size was set and if resulting image is larger that max size.
      * Then image is rotated accordingly.
      * Finally new Bitmap object is created and returned.
@@ -301,7 +300,6 @@ public class CropImageView extends TransformImageView {
 
     /**
      * If image doesn't fill the crop bounds it must be translated and scaled properly to fill those.
-     * <p/>
      * Therefore this method calculates delta X, Y and scale values and passes them to the
      * {@link WrapCropBoundsRunnable} which animates image.
      * Scale value must be calculated only if image won't fill the crop bounds after it's translated to the

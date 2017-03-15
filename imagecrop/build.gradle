@@ -25,17 +25,17 @@ dependencies {
 }
 ext {
     bintrayRepo = 'maven'////bintray上的仓库名，一般为maven
-    bintrayName = 'zrecyclerview'//bintray上的项目名
+    bintrayName = 'imagecrop'//bintray上的项目名
 
     publishedGroupId = 'com.zcy'//JCenter的GroupId
-    artifact = 'zrecyclerview'//JCenter的ArtifactId
+    artifact = 'imagecrop'//JCenter的ArtifactId
 
-    siteUrl = 'https://github.com/PureAway/NiceRecyclerView'
-    gitUrl = 'https://github.com/PureAway/NiceRecyclerView.git'
+    siteUrl = 'https://github.com/PureAway/AndroidCrop'
+    gitUrl = 'https://github.com/PureAway/AndroidCrop.git'
 
-    libraryVersion = '1.0.2'//版本号
-    libraryName = 'zrecyclerview'//项目名字，没什么用
-    libraryDescription = 'A nice library for android to use RecyclerView'
+    libraryVersion = '1.0.0'//版本号
+    libraryName = 'imagecrop'//项目名字，没什么用
+    libraryDescription = 'A nice library for android to crop image'
     //项目描述，没什么用
 
     //开发者信息
